@@ -15,6 +15,13 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
+# This repository contains Unity projects inside submission folders.
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta

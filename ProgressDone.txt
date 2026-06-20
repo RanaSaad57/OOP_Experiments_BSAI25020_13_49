@@ -1,0 +1,112 @@
+INTERACTIVE PHYSICS LAB - PROGRESS REPORT
+=========================================
+
+Team IDs: BSAI25020, BSAI25013, BSAI25049
+Unity version: 6000.4.6f1
+
+1. MODULES COMPLETED
+--------------------
+
+Scientific Calculator
+- Completed arithmetic and scientific operations.
+- Supports addition, subtraction, multiplication, division, powers, square,
+  square root, trigonometric functions, and logarithms.
+- Implemented as a reusable UI prefab.
+
+Data Recording Notebook
+- Records experiment name, observations, and time.
+- Supports long observations and multiple pages.
+- Implemented as a reusable UI prefab.
+
+Measurement Reading UI
+- Displays readings for common laboratory instrument types.
+- Supports units, precision, previous/next instrument selection, reset, and a
+  demonstration mode.
+- External student devices must call the public reading API during integration.
+
+Graph Plotting System
+- Adds manual data points and renders a line graph.
+- Calculates slope.
+- Displays major and minor grid divisions and axis scale information.
+- Implemented as a reusable UI prefab.
+
+Weighing Balance
+- Includes a 3D digital balance and a toggleable control panel.
+- Displays sample name, grams, and kilograms.
+- Supports simulation, tare, reset, and close controls.
+- Final integration with external draggable samples depends on the common game
+  interaction system selected by the class.
+
+2. MODULE LIMITATIONS OR FUTURE INTEGRATION
+-------------------------------------------
+
+- Measurement Reading UI includes a demonstration data source because the final
+  interfaces of voltmeters, thermometers, and other student-made instruments
+  were not defined when the module was developed.
+- Weighing Balance includes simulation controls. Automatic mass detection from
+  arbitrary external objects requires those objects to expose mass through an
+  agreed class interface or Rigidbody.
+- The modules are prefabs and can be integrated, but visual positioning may
+  need adjustment in another student's scene or canvas.
+
+3. MODULES USED IN THE PRACTICALS
+---------------------------------
+
+- Data notebook concepts were used for automatic trial recording.
+- Graph plotting was adapted for the required 2s versus t^2 and 2h versus t^2
+  graphs.
+- Scientific calculation was adapted for acceleration and gravitational
+  acceleration formulas while retaining manual calculator controls.
+- Measurement display concepts were used for live time, distance, angle,
+  friction, acceleration, and gravity readouts.
+
+4. PRACTICAL 4 - INCLINED PLANE
+-------------------------------
+
+Completed:
+- Experiment information, apparatus, theory, and procedure screen.
+- Guided Practice and Independent Mode.
+- Toggleable instructions and highlighted workflow guidance.
+- Adjustable angle, friction, and target distance with sliders, input fields,
+  plus buttons, and minus buttons.
+- Clickable 3D inclined-plane apparatus and closeable controls.
+- Rolling-ball simulation, reset, sampling, timing, and distance measurement.
+- Automatic data notebook containing s, t, 2s, t^2, and acceleration.
+- Dynamic graph of 2s against t^2 with major/minor boxes, labels, manual data
+  entry, and slope calculation.
+- Formula calculator and manual scientific calculator.
+
+Remaining limitations:
+- Results are an educational Unity physics simulation and can vary slightly
+  with the physics timestep.
+- Real laboratory imperfections such as air resistance and instrument reaction
+  time are simplified.
+
+5. PRACTICAL 5 - FREE FALL
+--------------------------
+
+Completed:
+- Experiment information, apparatus, theory, and procedure screen.
+- Guided Practice and Independent Mode.
+- 3D free-fall stand, release clamp, steel ball, height scale, and landing plate.
+- Adjustable height, release, reset, sampling, timing, and impact detection.
+- Automatic notebook containing h, t, 2h, t^2, and calculated g.
+- Dynamic graph of 2h against t^2 with scale labels and slope calculation.
+- Formula calculator and manual scientific calculator.
+- Ball travel distance and impact timing calibration were corrected.
+
+Remaining limitations:
+- The free-fall value should be close to 9.81 m/s^2, but small variation can
+  occur because Unity evaluates motion in discrete physics steps.
+- Final APK builds must be generated and retested on the presentation devices.
+
+6. FINAL SUBMISSION ITEMS
+-------------------------
+
+- Complete source code and assets: prepared.
+- Module prefab usage documentation: prepared.
+- Practical usage documentation: prepared.
+- ProgressDone.txt: prepared.
+- Module demo video: must be recorded after final visual testing.
+- Practical demo video: must be recorded after final visual testing.
+- Android APK builds: must be generated with Android Build Support installed.
