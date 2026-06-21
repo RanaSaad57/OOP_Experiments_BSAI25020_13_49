@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Physics Lab</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: #e8f3f6;
+      background: #07171a;
+    }
+    main { width: min(900px, 92vw); }
+    h1 { margin: 0 0 10px; font-size: 42px; letter-spacing: 0; }
+    p { color: #a9c5cc; line-height: 1.6; }
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+    a {
+      display: block;
+      min-height: 180px;
+      padding: 28px;
+      border: 1px solid #2a6673;
+      border-radius: 8px;
+      color: inherit;
+      text-decoration: none;
+      background: #10252b;
+    }
+    a:hover { border-color: #42b6ca; background: #153039; }
+    h2 { margin: 0 0 12px; font-size: 25px; }
+    @media (max-width: 650px) {
+      .options { grid-template-columns: 1fr; }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Interactive Physics Lab</h1>
+    <p>BSAI25020, BSAI25013 and BSAI25049 Unity OOP project.</p>
+    <div class="options">
+      <a href="./modules/">
+        <h2>Laboratory Modules</h2>
+        <p>Calculator, notebook, measurement display, graph plotting and weighing balance.</p>
+      </a>
+      <a href="./practicals/">
+        <h2>Physics Practicals</h2>
+        <p>Experiment 4 inclined-plane acceleration and Experiment 5 free fall.</p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

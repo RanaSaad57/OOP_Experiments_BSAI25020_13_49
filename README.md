@@ -53,6 +53,14 @@ The application starts at an experiment menu. Each experiment provides an
 information screen, guided and independent modes, instructions, a data
 notebook, graph plotting, and calculation tools.
 
+## WebGL Demos
+
+After GitHub Pages is enabled from the `docs` folder:
+
+- Landing page: `https://ranasaad57.github.io/OOP_Experiments_BSAI25020_13_49/`
+- Modules: `https://ranasaad57.github.io/OOP_Experiments_BSAI25020_13_49/modules/`
+- Practicals: `https://ranasaad57.github.io/OOP_Experiments_BSAI25020_13_49/practicals/`
+
 ## Team Access
 
 Repository owner: `RanaSaad57`
